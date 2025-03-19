@@ -68,6 +68,7 @@ HTMLActuator.prototype.addTile = function (tile) {
 
   inner.classList.add("tile-inner");
   inner.textContent = tile.value;
+  if (tile.value === 106) inner.textContent = 16;
   if (tile.value === 120) inner.textContent = 20;
   if (tile.value === 121) inner.textContent = 21;
   if (tile.value === 131) inner.textContent = 31;
